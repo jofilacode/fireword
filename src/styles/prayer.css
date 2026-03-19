@@ -1,0 +1,71 @@
+/* PAGE */
+.prayer-page {
+  padding: 20px;
+}
+
+/* HERO */
+.prayer-hero {
+  background: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.prayer-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.prayer-hero p {
+  font-size: 16px;
+}
+
+/* FORM */
+.prayer-form {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* LABEL */
+.prayer-form label {
+  font-weight: bold;
+}
+
+/* INPUTS */
+.prayer-form input,
+.prayer-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px;
+  background: #0b3d91;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #062a66;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .prayer-hero h1 {
+    font-size: 24px;
+  }
+
+  .prayer-form {
+    margin: 20px auto;
+  }
+}

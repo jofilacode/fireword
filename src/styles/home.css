@@ -1,0 +1,218 @@
+/* HERO */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  /* 🔥 smoother image change */
+  transition: background-image 1s ease-in-out;
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MAIN TITLE */
+.hero-overlay h1 {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* TAGLINE */
+.hero-overlay p {
+  font-size: 20px;
+  max-width: 650px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* 🔥 PROPHET NAME */
+.hero-overlay h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffcc00; /* gold highlight */
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+/* CONTAINER */
+.container {
+  padding: 40px 20px;
+}
+
+/* SERMON GRID */
+.sermon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  border: 1px solid #e5e5e5;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* CARD TEXT */
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 24px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .sermon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+}
+
+/* SERMON ROW */
+.sermon-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sermon-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.sermon-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0b3d91;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* VIDEO SECTION */
+.video-section {
+  text-align: center;
+}
+
+.video-wrapper {
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+}
+
+/* PROPHET PROFILE */
+.profile-section {
+  text-align: center;
+}
+
+.profile-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.profile-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.profile-text h3 {
+  margin-bottom: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sermon-row {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+}

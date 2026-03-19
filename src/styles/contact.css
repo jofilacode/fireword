@@ -1,0 +1,142 @@
+/* PAGE */
+.contact-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.contact-hero {
+  background: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 36px;
+}
+
+.contact-hero p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* CONTAINER */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* CARD */
+.contact-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* LINKS */
+.contact-card a {
+  color: #0b3d91;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* BRAND COLORS */
+.social-links .youtube {
+  background: #ff0000;
+}
+
+.social-links .youtube:hover {
+  background: #cc0000;
+}
+
+.social-links .tiktok {
+  background: #000000;
+}
+
+.social-links .tiktok:hover {
+  background: #222;
+}
+
+.social-links .facebook {
+  background: #1877f2;
+}
+
+.social-links .facebook:hover {
+  background: #145db2;
+}
+
+/* CTA */
+.contact-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.contact-cta h2 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    font-size: 24px;
+  }
+}

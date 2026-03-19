@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* NEW BLUE BACKGROUND */
+  background: #0b3d91; /* deep professional blue */
+
+  color: white;
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* LINKS (DESKTOP) */
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+
+  /* 🔥 BOLDER TEXT */
+  font-weight: 600;
+
+  /* 🔥 BETTER TEXT LOOK */
+  letter-spacing: 0.5px;
+
+  transition: 0.3s;
+
+  padding: 8px 5px;
+}
+
+/* HOVER EFFECT */
+.links a:hover {
+  color: #ffcc00; /* gold highlight (very ministry-like) */
+}
+
+/* ACTIVE LINK (optional future use) */
+.links a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+
+    /* SAME BLUE FOR CONSISTENCY */
+    background: #0b3d91;
+
+    flex-direction: column;
+
+    /* SLIDE DOWN EFFECT */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .links.active {
+    max-height: 300px;
+  }
+
+  .links a {
+    padding: 15px 20px;
+
+    /* 🔥 FULL WIDTH TEXT ALIGNMENT */
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-weight: 600;
+  }
+}

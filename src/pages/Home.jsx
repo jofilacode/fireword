@@ -56,7 +56,7 @@ function Home() {
         <h2>Video Sermon</h2>
         <div className="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/IkNpwXNMmRA?si=bGuuW2xTu-BapomP"
+            src="https://www.youtube.com/embed/hcQ3jY2E7Mg"
             
             title="Sermon Video"
             allowFullScreen
